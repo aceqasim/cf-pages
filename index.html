@@ -2,16 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cloudflare API Demo</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A demo application showcasing Cloudflare Pages API integration">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cloudflare Pages API Demo</title>
 </head>
 
 <body>
-    <h1>Cloudflare API Demo</h1>
-    <p>Fetching topics from my Worker API...</p>
-    <div id="topics"></div>
+    <div class="container">
+        <header>
+            <h1>Cloudflare Pages API Demo</h1>
+            <p class="subtitle">Fetch and display data with style</p>
+        </header>
+
+        <main>
+            <button id="fetchButton" class="button-primary">
+                <span class="button-text">Fetch Data</span>
+                <span class="loading-spinner" aria-hidden="true"></span>
+            </button>
+
+            <div id="dataContainer" class="card">
+                <div class="card-content">
+                    <div>
+                        <p>No data fetched yet</p>
+                        <p class="data-meta">Click the button above to load data</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Built with Cloudflare Pages</p>
+        </footer>
+    </div>
 
     <script src="index.js"></script>
 </body>
