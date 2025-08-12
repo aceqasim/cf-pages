@@ -144,9 +144,6 @@ button:active {
 
 }
 
-
-
-
 .data-item {
     background: rgba(255, 255, 255, 0.05);
     border-left: 3px solid var(--primary-color);
@@ -181,7 +178,6 @@ button:active {
     text-decoration: underline;
 }
 
-
 .data-item:hover {
     transform: translateX(4px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -210,8 +206,6 @@ button:active {
     margin-bottom: 0.5rem;
 }
 
-
-
 .retry-button {
     background-color: #e53e3e;
     color: white;
@@ -225,18 +219,6 @@ button:active {
 
 .retry-button:hover {
     background-color: #c53030;
-}
-
-
-
-.footer {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    text-align: center;
-    width: 100%;
 }
 
 @keyframes spin {
